@@ -6,13 +6,13 @@
 ### Cách chạy dự án
 Ở thư mục gốc 
 ### Phần Backend
-- npm i\
-- npm start\
-- npm run dev\
+- npm i
+- npm start
+- npm run dev
 
 ### Phần Frontend
-- npm i\
-- npm start\
+- npm i
+- npm start
 
 
  
