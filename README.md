@@ -14,5 +14,7 @@
 - npm i
 - npm start
 
-
+### Những tính năng đã bổ sung thêm
+- Bình luận
+- Sản phẩm tương tự
  
