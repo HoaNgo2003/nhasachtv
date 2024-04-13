@@ -1,0 +1,17 @@
+.productCard .textPart{
+    transition: transform .3s ease-out;
+
+}
+.productCard{
+    text-align: left;
+}
+.productCard:hover .textPart{
+    transform: translateY(-1rem);
+
+}
+.productCard image{
+    object-fit: contain;
+}
+.productCard:hover{
+    border: 2px solid #ddd;
+}

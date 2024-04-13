@@ -1,0 +1,13 @@
+.pagination{
+    display: flex;
+    margin-top: 5px;
+}
+.pagination .page-item{
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5%;
+}
+li.page-item:hover{
+    border-color: #1bb21b;
+}
