@@ -7,7 +7,6 @@
 Ở thư mục gốc 
 ### Phần Backend
 - npm i
-- npm start
 - npm run dev
 
 ### Phần Frontend
