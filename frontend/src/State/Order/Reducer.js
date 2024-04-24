@@ -1,7 +1,7 @@
-import { CREATE_ORDER_FAILURE, CREATE_ORDER_REQUEST, CREATE_ORDER_SUCCESS, GET_ORDER_BY_ID_FAILURE, GET_ORDER_BY_ID_REQUEST, GET_ORDER_BY_ID_SUCCESS } from "./OrderType";
+import { CREATE_ORDER_FAILURE, CREATE_ORDER_REQUEST, CREATE_ORDER_SUCCESS, GET_ORDER_BY_ID_FAILURE, GET_ORDER_BY_ID_REQUEST, GET_ORDER_BY_ID_SUCCESS, GET_ORDER_BY_USER_SUCCESS } from "./OrderType";
 
 const initialState = {
-    orders : [],
+    orders :null,
     order : null,
     error: null,
     loading: false
@@ -29,6 +29,12 @@ export const orderReducer = (state =initialState, action)=>{
                 loading: false,
                 error: action.payload
             }  
+        case GET_ORDER_BY_USER_SUCCESS:
+            return{
+                ...state,
+                loading: false,
+                orders: action.payload
+            }
         case GET_ORDER_BY_ID_REQUEST:
             return{
                 ...state,

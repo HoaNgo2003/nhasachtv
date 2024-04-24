@@ -192,7 +192,17 @@ export default function Navigation() {
                           )}
                         </Menu.Item>
                         </>:""}
-                        
+                        <Menu.Item >
+                          {({ active }) => (
+                            // eslint-disable-next-line jsx-a11y/anchor-is-valid
+                            <Link
+                              to={"/account/order"}
+                              className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            >
+                              Trạng thái đơn hàng
+                            </Link>
+                          )}
+                        </Menu.Item>
                         <Menu.Item onClick={handleLogout}>
                           {({ active }) => (
                             // eslint-disable-next-line jsx-a11y/anchor-is-valid
